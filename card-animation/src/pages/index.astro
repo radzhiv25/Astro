@@ -1,0 +1,82 @@
+---
+import Twitter from '/Images/twitter.gif'
+import Github from '/Images/daftpunktocat-guy.gif'
+import Linkedin from '/Images/linkedIn.gif'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Document</title>
+		<style>
+			.card{
+				animation: slideUp 500ms ease-out;
+			}
+			.background-animate {
+                background-size: 400%;
+
+                -webkit-animation: AnimationName 3s ease infinite;
+                -moz-animation: AnimationName 3s ease infinite;
+                animation: AnimationName 3s ease infinite;
+            }
+			@keyframes slideUp{
+				0%{
+					transform: translateY(100%)
+				}
+				100%{
+					transform: translateY(0)
+				}
+			}
+			@keyframes AnimationName {
+                0%,
+                100% {
+                        background-position: 0% 50%;
+                     }
+                50% {
+                        background-position: 100% 50%;
+				}
+			}
+		</style>
+	</head>
+	<body class="flex items-center justify-center">
+		<div class="absolute top-10">
+			<button popovertarget="popover" class="p-2 bg-green-500 rounded-md shadow-md shadow-green-400 text-white font-bold hover:text-l">Click Me!</button>
+		</div>
+		<div id="popover" popover class="card p-5 border rounded-md shadow-lg shadow-blue-200 bg-gradient-to-r from-pink-300 via-red-300 to-yellow-300 background-animate text-white">
+			<main class="text-center">
+				<h1 class="text-left text-2xl font-bold">Hello 👋, This is Rajeev</h1>
+				<p class="text-left py-3 w-72">
+					You can call me <span class="font-medium">Radzhiv</span>.
+					<br>
+					I am a front-end developer 💻.
+					<br>
+					I am passionate about building beautiful and accessible websites.
+				</p>
+				<h2 class="mb-2 text-left font-semibold">Here are my links:</h2>
+				<ul class="text-left space-y-2">
+					<li>
+						<a href="https://www.linkedin.com/in/rajeevkrishna25/
+						" target="_blank" class="hover:underline flex items-center gap-3">
+						<img src={Twitter} alt="" class="w-10 rounded-full">
+						rajeevkrishna25
+					</a>
+					</li>
+					<li>
+						<a href="https://github.com/radzhiv25" target="_blank" class="hover:underline flex items-center gap-3">
+							<img src={Github} alt="" class="w-10">
+							radzhiv25 
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/radzhivdev?s=21&t=welWG80NpNkbco1EA-hKfg" target="_blank" class="hover:underline flex items-center gap-3">
+							<img src={Linkedin} alt="" class="w-10 rounded-full">
+							RadzhivDev
+						</a>
+					</li>
+				</ul>
+			</main>
+		</div>
+	</body>
+</html>
