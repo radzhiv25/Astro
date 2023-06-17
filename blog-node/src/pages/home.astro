@@ -5,14 +5,18 @@ import Image1 from '/images/img-1.avif'
 import Image2 from '/images/jobSeek.avif'
 import HomeCard from '../components/HomeCard.astro'
 import Twitter from '/images/icons8-twitter.gif'
+import Instagram from '/images/icons8-instagram.gif'
+import Facebook from '/images/icons8-facebook.gif'
+import Twitch from '/images/icons8-twitch.gif'
+import Event from '/images/event.avif'
 ---
 
 <main class="p-5">
-    <div class="md:py-52 py-20 hero md:flex justify-center gap-10">
+    <section class="md:py-52 py-20 hero md:flex justify-center gap-10">
         <h1 class="text-5xl w-auto md:w-1/3">Unleash your thoughts.</h1>
         <p class="text-xl md:mt-0 mt-5 w-auto md:w-1/3">Welcome to Blog Node, where we explore the fascinating, the wild and the downright quirky world of the latest news, job oppurtunities and events get ready for an engaging and eye-opening experiences.</p>
-    </div>
-    <div class="py-12 md:flex flex-col md:flex-row gap-20">
+    </section>
+    <section class="py-12 md:flex flex-col md:flex-row gap-20">
         <div class="left-hero md:w-1/2">
             <img src={HeroB} alt="" class="rounded-lg w-auto">
             <div class="">
@@ -27,7 +31,7 @@ import Twitter from '/images/icons8-twitter.gif'
             </div>
             <img src={JobB} alt="" class="rounded-lg w-auto">
         </div>
-    </div>
+    </section>
     <div class="flex flex-col md:flex-row gap-20">
         <HomeCard 
         title="Breaking News" 
@@ -38,16 +42,64 @@ import Twitter from '/images/icons8-twitter.gif'
         content="Explore exciting job openings and find the perfect opportunity that aligns with your career goals and passions."
         img={Image2}/>
     </div>
-    <section class="py-10">
-        <h1 class="py-3 text-5xl">Events</h1>
-        <p class="w-1/3">Never miss out on top-notch events, workshops, and webinars that fuel your creativity and expand your horizons. Grab your spot today and connect with your community!</p>
-        <ul>
-            <li>
-                <img src={Twitter} alt="" class="w-10">
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <section class="py-20 flex md:flex-row flex-col">
+        <div class="left-eve md:w-1/2">
+            <h1 class="py-3 text-5xl">Events</h1>
+            <p class="md:w-2/3">Never miss out on top-notch events, workshops, and webinars that fuel your creativity and expand your horizons. Grab your spot today and connect with your community!</p>
+            <ul class="mt-5 flex gap-5">
+                <li>
+                    <img src={Twitter} alt="" class="w-6">
+                </li>
+                <li>
+                    <img src={Instagram} alt="" class="w-6">
+                </li>
+                <li>
+                    <img src={Facebook} alt="" class="w-6">
+                </li>
+                <li>
+                    <img src={Twitch} alt="" class="w-6">
+                </li>
+            </ul>
+        </div>
+        <div class="right-eve mt-5 md:mt-0">
+                <img src={Event} alt="" class="rounded-md">
+        </div>
+    </section>
+    <section>
+        <h1 class="text-center md:text-4xl text-3xl mb-10">Got Questions we have got answers</h1>
+        <div class="card-grid grid md:grid-cols-2 grid-rows-1 gap-10">
+            <div class="item-1">
+                <h1 class="font-bold text-xl">
+                    How often is Blog Node Updated ?
+                </h1>
+                <p>
+                    We’re constantly on the lookout for fresh content, updating our platform daily with the latest news, job opportunities, and events.
+                </p>
+            </div>
+            <div class="item-2">
+                <h1 class="font-bold text-xl">
+                    Can I contribute to Blog Node ?
+                </h1>
+                <p>
+                    Absolutely! We're always thrilled to welcome new voices to our community. Just get in touch and let's create awe-inspiring content together.
+                </p>
+            </div>
+            <div class="item-3">
+                <h1 class="font-bold text-xl">
+                    Do I need an account to access Blog Node?
+                </h1>
+                <p>
+                    You can enjoy Blog Node for free, but we strongly recommend creating an account to unlock exciting features and stay updated.
+                </p>
+            </div>
+            <div class="item-4">
+                <h1 class="font-bold text-xl">
+                    What makes Blog Node stand out?
+                </h1>
+                <p>
+                    Blog Node is not your ordinary blog platform. We curate exciting, entertaining content that sparks your curiosity and empowers you to be an active, well-informed participant in the world around you.
+                </p>
+            </div>
+        </div>
     </section>
 </main>
