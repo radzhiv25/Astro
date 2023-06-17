@@ -1,0 +1,53 @@
+---
+import HeroB from '/images/hero-bottom.avif'
+import JobB from '/images/job1.avif'
+import Image1 from '/images/img-1.avif'
+import Image2 from '/images/jobSeek.avif'
+import HomeCard from '../components/HomeCard.astro'
+import Twitter from '/images/icons8-twitter.gif'
+---
+
+<main class="p-5">
+    <div class="md:py-52 py-20 hero md:flex justify-center gap-10">
+        <h1 class="text-5xl w-auto md:w-1/3">Unleash your thoughts.</h1>
+        <p class="text-xl md:mt-0 mt-5 w-auto md:w-1/3">Welcome to Blog Node, where we explore the fascinating, the wild and the downright quirky world of the latest news, job oppurtunities and events get ready for an engaging and eye-opening experiences.</p>
+    </div>
+    <div class="py-12 md:flex flex-col md:flex-row gap-20">
+        <div class="left-hero md:w-1/2">
+            <img src={HeroB} alt="" class="rounded-lg w-auto">
+            <div class="">
+                <h1 class="md:mt-5 text-3xl">Discover your passion</h1>
+                <p class="mt-5">Blog Node offers stories from various sectors, ensuring you never miss a beat. Get the scoop on the latest news, new job prospects and stay informed about upcoming events.</p>
+            </div>
+        </div>
+        <div class="right-hero md:mt-0 mt-5 md:w-1/2">
+            <div class="">
+                <h1 class="md:mt-0 text-3xl">Upgraded Segments: Deep Dive into the world of Blog Node</h1>
+                <p class="mb-5">Our platform is designed to create a content-rich experience. Find your niche and mingle with like-minded Blog Node readers and contributors.</p>
+            </div>
+            <img src={JobB} alt="" class="rounded-lg w-auto">
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-20">
+        <HomeCard 
+        title="Breaking News" 
+        content="Stay informed with the hottest news from around the globe, updating constantly for your reading pleasure."
+        img={Image1}/>
+        <HomeCard 
+        title="Job Seekers" 
+        content="Explore exciting job openings and find the perfect opportunity that aligns with your career goals and passions."
+        img={Image2}/>
+    </div>
+    <section class="py-10">
+        <h1 class="py-3 text-5xl">Events</h1>
+        <p class="w-1/3">Never miss out on top-notch events, workshops, and webinars that fuel your creativity and expand your horizons. Grab your spot today and connect with your community!</p>
+        <ul>
+            <li>
+                <img src={Twitter} alt="" class="w-10">
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</main>

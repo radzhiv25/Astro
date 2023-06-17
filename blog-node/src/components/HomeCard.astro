@@ -1,0 +1,15 @@
+---
+const {title, content, img} = Astro.props;
+---
+
+<div class="right-cont md:w-1/2">
+    <img src={img} alt="" class="rounded-md">
+    <div class="img2-content">
+        <h1 class="py-3 text-3xl">
+            {title}
+        </h1>
+        <p class="text-lg">
+            {content}
+        </p>
+    </div>
+</div>
