@@ -4,7 +4,7 @@ const {Heading, Para, Image, Link, count, time} = Astro.props
 import Like from '/images/heart.png'
 ---
 
-<div class="news-card w-auto rounded-md text-center shadow-lg">
+<div class="news-card bg-[#181818] w-auto rounded-md text-center shadow-lg hover:shadow-slate-800 hover:scale-105 transition-transform">
     <img src={Image} width={400} alt="" class="rounded-t-md">
     <h1 class="p-3 text-left text-lg font-semibold">{Heading}</h1>
     <p class="p-3 text-justify text-sm">{Para} <span class="text-blue-500 font-semibold">

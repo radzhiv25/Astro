@@ -1,21 +1,26 @@
+---
+import Style from "./style.astro";
+---
+
 <div class="nav p-5 flex items-center justify-between text-[#ffb941]">
-	<h1 class="text-4xl font-bold text-orange-400">
+	<h1 class="lg:pl-0 text-4xl font-bold">
 		<a href="/">
-			Blog Node
+			<Style Title="Blog Node" />
 		</a>
 	</h1>
-	<ul class="lg:flex gap-10 lg:visible hidden">
+	<ul class="lg:flex gap-10 lg:visible hidden font-semibold">
 		<li>
-			<a href="/" class="hover:text-pink-500">Home</a>
+			<a href="/" class="hover:text-yellow-400">Home</a>
 		</li>
 		<li>
-			<a href="/news" target="_parent" class="hover:text-pink-500">News</a>
+			<a href="/news" target="_parent" class="hover:text-yellow-400">News</a>
 		</li>
 		<li>
-			<a href="/job" target="_parent" class="hover:text-pink-500">Jobs</a>
+			<a href="/job" target="_parent" class="hover:text-yellow-400">Jobs</a>
 		</li>
 		<li>
-			<a href="/event" target="_parent" class="hover:text-pink-500">Events</a>
+			<a href="/event" target="_parent" class="hover:text-yellow-400">Events</a>
 		</li>
 	</ul>
 </div>
+

@@ -1,0 +1,32 @@
+---
+const { Title } = Astro.props;
+---
+
+<div class="title">
+    <p>{Title}</p>
+</div>
+<style>
+    p {
+        background: linear-gradient(
+            to right,
+            #000000 20%,
+            #2F2F2F 30%,
+            #F6F6F6 70%,
+            #FFCB74 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background-size: 500% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+    }
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+</style>

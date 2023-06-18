@@ -4,12 +4,12 @@ import JobCard from "../components/JobCard.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<body>
+<body class="bg-black text-[#FFCB74]">
 	<Navbar />
 	<p class="py-32 text-xl md:mx-40 mx-auto ">
         Welcome to Blog Node's job section, where you can discover a range of exciting job opportunities and learn more about what it's like to be a part of our dynamic team. We believe in fostering a culture of growth, collaboration, and innovation, and we are constantly on the lookout for talented individuals who share our passion. Explore our diverse range of roles and find the perfect fit for your skills and aspirations.
     </p>
-    <div class="job-section grid grid-cols-3 lg:grid-cols-4 gap-10  text-center p-5">
+    <div class="job-section grid grid-cols-2 lg:grid-cols-4 gap-10 text-center lg:p-5 p-16">
         <JobCard 
         Logo="https://img.naukimg.com/logo_images/groups/v1/42932.gif"
         Name="Genpact"
@@ -114,7 +114,7 @@ import Footer from "../components/Footer.astro";
         Link="https://www.naukri.com/jpmorgan-chase-bank-overview-240936?searchId=16870853283578094&src=featuredCompanyListing"
         />
     </div>
-    <button class="my-10 flex hover:font-semibold mx-auto text-center p-2 border hover:shadow-md rounded-md">
+    <button class="my-10 flex hover:font-semibold mx-auto text-center p-2 border hover:shadow-md rounded-md text-white">
         <a href="https://www.naukri.com/jobs">
             View more
         </a>
