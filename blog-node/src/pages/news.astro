@@ -1,17 +1,22 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import Card from '../components/Card.astro'
-import Dev from '/images/dev.jpeg'
+import Card from '../components/NewsCard.astro'
+import News from '/images/news1.avif'
 ---
 
-<body class="bg-black text-orange-400">
+<body class="text-black">
 	<Navbar />
+	<p class="py-10 text-xl md:mx-40 mx-auto">Welcome to our Blog Node News's Section! Stay up-to-date with the latest happenings and breaking news from around the world. Our writers works tirelessly to bring you with insights with wide range of articles in technology, politics, science, entertainment and much more. Whether you're looking for in-depth analysisi or quick news shorts, we've got you covered. Join us we we get deep into the current updaets adn provide engaging, well approved content on the web with just a few taps away.</p>
 	<!-- <h1>This is news</h1> -->
 	<main class="grid grid-cols-3 gap-5  p-5">
-		<!-- <img src={Dev} alt=""> -->
-		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." Image={Dev} Link="http://www.huffpost.com/"/>
-		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." Image={Dev}/>
-		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." Image={Dev}/>
-		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." Image={Dev}/>
+		<Card 
+		Heading="88,000 crore worth of 500 missing notes: RBI says reports based on erroneous interpretation of RTI reply" 
+		Para="The Reserve Bank of India (RBI) has clarified that reports alleging missing 500 notes worth 88,032 crore from the system are erroneous. In a late night press release, RBI said that certain sections of the media have circulated reports alleging the disappearance of bank notes printed by bank note printing presses. According to RBI, these reports are based on erroneous interpretation of information collected under the Right to Information Act, 2005 from the printing presses." 
+		Image={News} 
+		Link="https://www.livemint.com/news/india/rs-500-missing-notes-reports-based-on-erroneous-interpretation-of-information-rbi-11687024202660.html"/>
+
+		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." Image={}/>
+		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." Image={}/>
+		<Card Heading="hello" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." Image={}/>
 	</main>
 </body>
