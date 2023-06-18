@@ -6,13 +6,118 @@ import Footer from "../components/Footer.astro";
 
 <body>
 	<Navbar />
-	<p class="py-20 text-xl md:mx-40 mx-auto ">
+	<p class="py-32 text-xl md:mx-40 mx-auto ">
         Welcome to Blog Node's job section, where you can discover a range of exciting job opportunities and learn more about what it's like to be a part of our dynamic team. We believe in fostering a culture of growth, collaboration, and innovation, and we are constantly on the lookout for talented individuals who share our passion. Explore our diverse range of roles and find the perfect fit for your skills and aspirations.
     </p>
-    <div class="job-section">
+    <div class="job-section grid grid-cols-3 lg:grid-cols-4 gap-10  text-center p-5">
         <JobCard 
-        
+        Logo="https://img.naukimg.com/logo_images/groups/v1/42932.gif"
+        Name="Genpact"
+        Rating="4.0"
+        Review="21.5K+ reviews"
+        Bio="Global professional services firm."
+        Link="https://www.naukri.com/genpact-overview-42932?tab=jobs&searchId=16870721859665940&src=featuredCompanyListing"
+        />
+
+        <JobCard  
+        Logo="https://img.naukimg.com/logo_images/groups/v1/29798.gif"
+        Name="Reliance Industries"
+        Rating="4.1"
+        Review="10.8K+ reviews"
+        Bio="Indian multinational conglomerate company."
+        Link="https://www.naukri.com/reliance-industries-ril-overview-29798?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+        <JobCard
+        Logo="https://img.naukimg.com/logo_images/groups/v1/214440.gif"
+        Name="Reliance Retail"
+        Rating="4.0"
+        Review="13.5K+ reviews"
+        Bio="One of India's top 100 workplace in 2022."
+        Link="https://www.naukri.com/reliance-retail-overview-214440?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/398058.gif"
+        Name="Amazon"
+        Rating="4.2"
+        Review="16.3K+ reviews"
+        Bio="World's largest online retailer and a cloud provider."
+        Link="https://www.naukri.com/amazon-overview-398058?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/233334.gif"
+        Name="Coforge"
+        Rating="3.7"
+        Review="1.3K+ reviews"
+        Bio="Global digital services and solutions provider."
+        Link="https://www.naukri.com/coforge-overview-233334?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/2095704.gif"
+        Name="Jio"
+        Rating="4.0"
+        Review="16.5K+ reviews"
+        Bio="India's largest 4G network provider."
+        Link="https://www.naukri.com/jio-overview-2095704?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/1288.gif"
+        Name="Capgemini"
+        Rating="3.9"
+        Review="23.7K+ reviews"
+        Bio="Global leader in technology services."
+        Link="https://www.naukri.com/capgemini-overview-1288?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/4156.gif"
+        Name="Cognizant"
+        Rating="3.9"
+        Review="34K+ reviews"
+        Bio="Leading ITeS company with global presence."
+        Link="https://www.naukri.com/cognizant-overview-4156?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/126896.gif"
+        Name="Airtel"
+        Rating="4.1"
+        Review="10.2K+ reviews"
+        Bio="Leading global telecom company."
+        Link="https://www.naukri.com/airtel-overview-126896?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/44512.gif"
+        Name="ICICI Bank"
+        Rating="4.0"
+        Review="27.8K+ reviews"
+        Bio="Leading private sector brand in India."
+        Link="https://www.naukri.com/icici-bank-overview-44512?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/1186200.gif"
+        Name="Virtusa"
+        Rating="3.8"
+        Review="2.7K+ reviews"
+        Bio="Global provider of IT outsourcing services."
+        Link="https://www.naukri.com/virtusa-overview-1186200?searchId=16870853283578094&src=featuredCompanyListing"
+        />
+        <JobCard 
+        Logo="https://img.naukimg.com/logo_images/groups/v1/240936.gif"
+        Name="JPMorgan Chase Bank"
+        Rating="4.2"
+        Review="4.1K+ reviews"
+        Bio="Leader in financial services."
+        Link="https://www.naukri.com/jpmorgan-chase-bank-overview-240936?searchId=16870853283578094&src=featuredCompanyListing"
         />
     </div>
+    <button class="my-10 flex hover:font-semibold mx-auto text-center p-2 border hover:shadow-md rounded-md">
+        <a href="https://www.naukri.com/jobs">
+            View more
+        </a>
+    </button>
     <Footer />
 </body>

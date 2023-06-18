@@ -1,11 +1,22 @@
 ---
-const {Logo, Name, Rating,Review, Bio} = Astro.props;
+const {Logo, Name, Rating,Review, Bio,Link} = Astro.props;
+import Star from '/images/Star.png'
 ---
 
-<div class="job-card rounded-md shadow-md">
-    <img src={Logo} alt="">
-    <h1>{Name}</h1>
-    <p>{Rating}|{Review}</p>
-    <p>{Bio}</p>
-    <button class="p-2 border">View Jobs</button>
+<div class="job-card rounded-md border shadow-md space-y-1 p-3 hover:shadow-lg">
+    <img src={Logo} alt="" class="border mx-auto rounded-md">
+    <h1 class="text-lg font-semibold">{Name}</h1>
+    <div class="p-txt p-1 flex flex-col items-center m-10 rounded-md text-sm">
+        <p class="flex items-center gap-1 font-medium">
+            <img src={Star} alt="" class="w-3">
+            {Rating}
+            <span class="my-1 border-l-2  border-gray-400 px-1">{Review}</span>
+        </p>
+        <p class="">{Bio}</p>
+    </div>
+    <button class="mt-5 py-1 px-2 border rounded-sm hover:border-gray-400">
+        <a href={Link}>
+            View Jobs
+        </a>
+    </button>
 </div>
