@@ -1,9 +1,10 @@
 ---
 // import Dev from '/images/dev.jpg'
-const {Heading, Para, Image, Link} = Astro.props
+const {Heading, Para, Image, Link, count, time} = Astro.props
+import Like from '/images/heart.png'
 ---
 
-<div class="rounded-md text-center shadow-lg">
+<div class="w-auto rounded-md text-center shadow-lg">
     <img src={Image} width={400} alt="" class="rounded-t-md">
     <h1 class="p-3 text-left text-lg font-semibold">{Heading}</h1>
     <p class="p-3 text-justify text-sm">{Para} <span class="text-blue-500 font-semibold">
@@ -11,10 +12,21 @@ const {Heading, Para, Image, Link} = Astro.props
             Read More
         </a>
     </span></p>
-    <div class="p-3 flex justify-between">
-        <div class="like">
-            <span class="num" onclick="increment">like</span>
+    <div class="p-3 flex justify-between items-center">
+        <div class="like p-2 flex border text-sm gap-1 rounded-md">
+            <button class="num">
+                <img src={Like} alt="" class="w-5">
+            </button>
+            <span class="">{count}</span>
         </div>
-        <p class="text-sm font-bold">13 mins ago</p>
+        <p class="text-sm font-semibold">{time} min read</p>
     </div>
 </div>
+
+<!-- <script>
+    document.getElementsByClassName('num').addEventListener("click", like);
+
+function like() {
+  alert ("Hello World!");
+}
+</script> -->
