@@ -1,8 +1,18 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import JobCard from "../components/JobCard.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <body>
 	<Navbar />
-	<h1>This is Jobs</h1>
+	<p class="py-20 text-xl md:mx-40 mx-auto ">
+        Welcome to Blog Node's job section, where you can discover a range of exciting job opportunities and learn more about what it's like to be a part of our dynamic team. We believe in fostering a culture of growth, collaboration, and innovation, and we are constantly on the lookout for talented individuals who share our passion. Explore our diverse range of roles and find the perfect fit for your skills and aspirations.
+    </p>
+    <div class="job-section">
+        <JobCard 
+        
+        />
+    </div>
+    <Footer />
 </body>

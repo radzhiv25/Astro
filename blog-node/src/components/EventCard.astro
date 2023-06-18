@@ -1,0 +1,22 @@
+---
+const {Image, Head, Place, Category, Price, Link} = Astro.props
+---
+
+<div class="eve-card border rounded-md hover:shadow-lg">
+    <div class="">
+        <img src={Image} alt="" class="rounded-t-md" >
+    </div>
+    <div class="desc p-2 space-y-1">
+        <h1 class="text-xl font-semibold">{Head}</h1>
+        <div class="p-txt font-medium">
+            <p>{Place}</p>
+            <p>{Category}</p>
+            <p>{Price}</p>
+        </div>
+        <button class="py-1 px-2 border hover:border-gray-400 hover:font-semibold rounded-sm">
+            <a href={Link}>
+                View
+            </a>
+        </button>
+    </div>
+</div>

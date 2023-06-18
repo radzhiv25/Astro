@@ -1,8 +1,99 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import EventCard from "../components/EventCard.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<body>
-	<Navbar />
-	<h1>This is Events</h1>
+<body class="">
+    <Navbar />
+    <p class="py-20 text-xl md:mx-40 mx-auto">
+        Welcome to our Blog Node's Events section, where you can stay informed
+        about the latest and most exciting events happening in our industry and
+        community. We believe in keeping our readers engaged and connected, and
+        this section is dedicated to providing valuable information about
+        upcoming conferences, workshops, webinars, and other relevant
+        gatherings. Join us as we explore opportunities to learn, network, and
+        expand your horizons.
+    </p>
+    <div class="event-section grid grid-cols-4 p-5 gap-5 ">
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyOCBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00358308-cwyhyrqabl-portrait.jpg"
+            Head="Sun Burn Goa 2023"
+            Place="Venue to be announced"
+            Category="Concert"
+            Price="Rs 3750 ownwards"
+            Link="https://in.bookmyshow.com/events/sunburn-goa-2023/ET00358308"
+        />
+
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCA2IEp1bA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00357779-dzekspcedu-portrait.jpg"
+            Head="Zakir Khan Live"
+            Place="Tata Theatre: NPCA"
+            Category="Stand Up Comedy"
+            Price="Rs 999 ownwards"
+            Link="https://in.bookmyshow.com/events/zakir-khan-live/ET00357779"
+        />
+
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxIEp1bA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00335355-aulambzsry-portrait.jpg"
+            Head="A standup solo"
+            Place="Radisson Blu Hotel: Indore"
+            Category="Comedy Shows"
+            Price="Rs. 699 ownwards"
+            Link=""
+        />
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyNCBKdW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00131211-edwmrltndu-portrait.jpg"
+            Head="Art and Craft Online Workhop"
+            Place="Watch on Zoom"
+            Category="Arts and Crafts"
+            Price="Rs 399"
+            Link="https://in.bookmyshow.com/events/art-and-craft-online-workshop/ET00131211"
+        />
+
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyNCBKdW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304969-qbrlsfmyek-portrait.jpg"
+            Head="Johnny Lever Teaches Comedy"
+            Place="Online Streaming"
+            Category="Comedy"
+            Price="Rs 699"
+            Link="https://in.bookmyshow.com/events/johnny-lever-teaches-comedy/ET00304969"
+        />
+        
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyMyBKdW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00358276-qcawwafvvn-portrait.jpg"
+            Head="Internation Career Coach - Foundation"
+            Place="Watch on Zoom"
+            Category="Education"
+            Price="Free"
+            Link="https://in.bookmyshow.com/events/international-certified-career-coach-foundation/ET00358276"
+        />
+
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyIEp1bA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00359812-zxghgmdjfn-portrait.jpg"
+            Head="Ulta Palta - A Show by Neeti Patla"
+            Place="Papaya Tree Hotel: Indore"
+            Category="Comedy Show"
+            Price="Rs 399 ownwards"
+            Link="https://in.bookmyshow.com/events/ulta-palta-a-comedy-show-by-neeti-palta/ET00359812"
+        />
+
+        <EventCard
+            Image="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBKdWw%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337346-cptuwuhabz-portrait.jpg"
+            Head="Gem of a Person by Devesh dixit"
+            Place="Papaya Tree Hotel: Indore"
+            Category="Comedy Show"
+            Price="Rs 499"
+            Link="https://in.bookmyshow.com/events/gem-of-a-person-by-devesh-dixit/ET00337346"
+        />
+
+
+    </div>
+    <button class="my-10 flex hover:font-semibold mx-auto text-center p-2 border hover:shadow-md rounded-md">
+        <a href="https://in.bookmyshow.com/explore/events">
+            View more
+        </a>
+    </button>
+    <Footer />
+
 </body>

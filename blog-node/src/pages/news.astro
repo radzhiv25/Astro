@@ -6,57 +6,59 @@ import Footer from '../components/Footer.astro'
 
 <body class="text-black">
 	<Navbar />
-	<p class="py-20 text-xl md:mx-40 mx-auto">Welcome to our Blog Node News's Section! Stay up-to-date with the latest happenings and breaking news from around the world. Our writers works tirelessly to bring you with insights with wide range of articles in technology, politics, science, entertainment and much more. Whether you're looking for in-depth analysisi or quick news shorts, we've got you covered. Join us we we get deep into the current updaets adn provide engaging, well approved content on the web with just a few taps away.</p>
+	<p class="py-20 text-xl md:mx-40 mx-auto">Welcome to our Blog Node's Section! Stay up-to-date with the latest happenings and breaking news from around the world. Our writers works tirelessly to bring you with insights with wide range of articles in technology, politics, science, entertainment and much more. Whether you're looking for in-depth analysisi or quick news shorts, we've got you covered. Join us we we get deep into the current updaets adn provide engaging, well approved content on the web with just a few taps away.</p>
 	<!-- <h1>This is news</h1> -->
-	<main class="grid grid-cols-3 gap-5 p-5">
-		<Card 
-		Image="https://www.livemint.com/lm-img/img/2023/06/17/600x338/rs500note_1687024603145_1687024603310.jpg" 
-		Heading="88,000 crore worth of 500 missing notes: RBI says reports based on erroneous interpretation of RTI reply" 
-		Para="The Reserve Bank of India (RBI) has clarified that reports alleging missing 500 notes worth 88,032 crore from the system are erroneous. In a late night press release, RBI said that certain sections of the media have circulated reports alleging the disappearance of bank notes printed by bank note printing presses. According to RBI, these reports are based on erroneous interpretation of information under the Right to Information Act.	" 
-		Link="https://www.livemint.com/news/india/rs-500-missing-notes-reports-based-on-erroneous-interpretation-of-information-rbi-11687024202660.html"
-		count="14"
-		time="3"/>
+	<main class="flex flex-col gap-5 p-5">
+		<div class="top-news grid grid-cols-3 gap-5">
+			<Card 
+			Image="https://www.livemint.com/lm-img/img/2023/06/17/600x338/rs500note_1687024603145_1687024603310.jpg" 
+			Heading="88,000 crore worth of 500 missing notes: RBI says reports based on erroneous interpretation of RTI reply" 
+			Para="The Reserve Bank of India (RBI) has clarified that reports alleging missing 500 notes worth 88,032 crore from the system are erroneous. In a late night press release, RBI said that certain sections of the media have circulated reports alleging the disappearance of bank notes printed by bank note printing presses. According to RBI, these reports are based on erroneous interpretation of information under the Right to Information Act.	" 
+			Link="https://www.livemint.com/news/india/rs-500-missing-notes-reports-based-on-erroneous-interpretation-of-information-rbi-11687024202660.html"
+			count="14"
+			time="3"/>
+	
+			<Card 
+			Image={'https://www.livemint.com/lm-img/img/2023/06/18/600x338/India_US_1687063424345_1687063424724.jpg'}
+			Heading="PM Modi US visit: India-US to scale up space collaboration" 
+			Para="India and the United States will scale up their space-related collaboration in three areas including planetary defense, commercial space activity, and human space flight during Prime Minister Narendra Modi's visit to Washington DC on June 22. In addition, the two sides are also discussing New Delhi's participation in the Artemis Accords, according to a report published by Hindustan Times. In January, both countries' national advisors Jake Sullivan and Ajit Doval agreed upon the White House factsheet under the initiative on critical and emerging technologies (ICET)." 
+			Link="https://www.livemint.com/news/india/india-us-space-collaboration-pm-modi-us-visit-11687061349847.html"
+			count="50"
+			time="5" />
 
-		<Card 
-		Image={'https://www.livemint.com/lm-img/img/2023/06/18/600x338/India_US_1687063424345_1687063424724.jpg'}
-		Heading="PM Modi US visit: India-US to scale up space collaboration" 
-		Para="India and the United States will scale up their space-related collaboration in three areas including planetary defense, commercial space activity, and human space flight during Prime Minister Narendra Modi's visit to Washington DC on June 22. In addition, the two sides are also discussing New Delhi's participation in the Artemis Accords, according to a report published by Hindustan Times. In January, both countries' national advisors Jake Sullivan and Ajit Doval agreed upon the White House factsheet under the initiative on critical and emerging technologies (ICET)." 
-		Link="https://www.livemint.com/news/india/india-us-space-collaboration-pm-modi-us-visit-11687061349847.html"
-		count="50"
-		time="5" />
-
-		<Card
-		Image="https://images.indianexpress.com/2023/06/JEE-Advanced-result-how-to-check.jpg?w=640"
-		Heading="JEE Advanced Result 2023 Declared: How to check score card at jeeadv.ac.in; merit list"
-		Para="This time, qualifying cut-off is expected to be higher than last year. Saurabh Kumar, Chief Academic Officer, Vidyamandir Classes said that cut-off marks for the unreserved category will be between 49 to 52 marks. “For OBC and EWS, the cut-off marks will be 80 per cent of the general category’s cut-off and for SC and ST students, it will be 50 per cent of the general category,” Kumar said. The final answer key and scorecard is being released after the experts considered all the challenges raised against the provisional answer key."
-		Link="https://indianexpress.com/article/education/jee-advanced-result-2023-declared-how-to-check-scorecards-toppers-iit-guwahati-jeeadv-ac-in-8667448/"
-		count="10"
-		time="2"/>
-
-		<Card
-		Image="https://static.toiimg.com/thumb/imgsize-566368,msid-101076783,width-700,resizemode-4/101076783.jpg"
-		Heading="Cyclone Biparjoy Live updates: Rajasthan receives heavy rainfall; over 1,000 villages in Jalore and Barmer in dark as power supply affected"
-		Para="Several places in Rajasthan received heavy rainfall on Saturday due to Cyclone 'Biparjoy', which moved further towards the desert state following its landfall in Gujarat. A 'freak' spell of 549mm rain over 10 days in August 2006 was said to have spawned 20 lakes in Barmer. A girl was electrocuted in Pali district, possibly from one of the power poles lying supine. Reports are rife about 4 to 5ft water in scores of hamlets, with 600-700 people being shifted to safer sites."
-		Link="https://timesofindia.indiatimes.com/city/jaipur/cyclone-biparjoy-live-cyclone-in-gujarat-rajasthan-pakistan-rains-impact-affected-areas/liveblog/101076752.cms"
-		count="25"
-		time="2"/>
-
-		<Card
-		Image="https://bsmedia.business-standard.com/_media/bs/img/article/2023-06/09/full/1686331706-6838.jpg?im=FeatureCrop,width=826,height=465"
-		Heading="Apple Vision Pro to restrict camera access for third party apps: Report"
-		Para="Tech giant Apple recently unveiled its first augmented reality headset, Apple Vision Pro, at its 2023 Worldwide Developers Conference. (WWC) according to the website Mashable. An Apple engineer, cited by the US website stated that the Apple Vision Pro's camera feeds will not be made available to third-party developers. Because of privacy concerns, Apple is blocking access to the camera. During developer talks at WWDC 2023, an Apple engineer revealed that third-party developers will not have access to Apple Vision Pro camera feeds (via UploadVR). Due to privacy concerns, Apple will block unauthorised access to the mixed reality headset's camera. When making a FaceTime call using Apple Vision Pro."
-		Link="https://www.business-standard.com/technology/tech-news/apple-vision-pro-to-restrict-camera-access-for-third-party-apps-report-123061700495_1.html"
-		count="12"
-		time="3"/>
-
-		<Card
-		Image="https://www.financialexpress.com/wp-content/uploads/2023/06/Breaking-News-pic-4.jpg"
-		Heading="Breaking News LIVE: Adani Enterprise to sell rail tickets online? Gautam Adani challenges IRCTC  monopoly with this deal"
-		Para="In a major development that would virtually end the monopoly of IRCTC is selling Indian Railway tickets online, Adani Enterprise has signed a deal to buy 100 per cent stakes in Stark Enterprises Private Limited. This is an online ticket booking site. Adani Enterprise confirmed this news via a regulatory filing with the stock market. With reference to the captioned subject, we would like to inform you that Adani Digital Labs Private Limited , a wholly owned subsidiary of the Company has signed a Share Purchase Agreement in relation to its proposed acquisition of 100% stake in Stark Enterprises Private Limited, also known as Trainman."
-		Link="https://www.financialexpress.com/india-news/breaking-news-on-june-17-latest-india-news-world-updates-business-news-sports-latest-news-top-trending-news/3129790/"
-		count="43"
-		time="4"/>
-		
+			<Card
+			Image="https://images.indianexpress.com/2023/06/JEE-Advanced-result-how-to-check.jpg?w=640"
+			Heading="JEE Advanced Result 2023 Declared: How to check score card at jeeadv.ac.in; merit list"
+			Para="This time, qualifying cut-off is expected to be higher than last year. Saurabh Kumar, Chief Academic Officer, Vidyamandir Classes said that cut-off marks for the unreserved category will be between 49 to 52 marks. “For OBC and EWS, the cut-off marks will be 80 per cent of the general category’s cut-off and for SC and ST students, it will be 50 per cent of the general category,” Kumar said. The final answer key and scorecard is being released after the experts considered all the challenges raised against the provisional answer key."
+			Link="https://indianexpress.com/article/education/jee-advanced-result-2023-declared-how-to-check-scorecards-toppers-iit-guwahati-jeeadv-ac-in-8667448/"
+			count="10"
+			time="2"/>
+		</div>
+		<div class="bottom-news grid md:grid-cols-3 grid-rows-1 gap-5">
+			<Card
+			Image="https://static.toiimg.com/thumb/imgsize-566368,msid-101076783,width-700,resizemode-4/101076783.jpg"
+			Heading="Cyclone Biparjoy Live updates: Rajasthan receives heavy rainfall; over 1,000 villages in Jalore and Barmer in dark as power supply affected"
+			Para="Several places in Rajasthan received heavy rainfall on Saturday due to Cyclone 'Biparjoy', which moved further towards the desert state following its landfall in Gujarat. A 'freak' spell of 549mm rain over 10 days in August 2006 was said to have spawned 20 lakes in Barmer. A girl was electrocuted in Pali district, possibly from one of the power poles lying supine. Reports are rife about 4 to 5ft water in scores of hamlets, with 600-700 people being shifted to safer sites."
+			Link="https://timesofindia.indiatimes.com/city/jaipur/cyclone-biparjoy-live-cyclone-in-gujarat-rajasthan-pakistan-rains-impact-affected-areas/liveblog/101076752.cms"
+			count="25"
+			time="2"/>
+	
+			<Card
+			Image="https://bsmedia.business-standard.com/_media/bs/img/article/2023-06/09/full/1686331706-6838.jpg?im=FeatureCrop,width=826,height=465"
+			Heading="Apple Vision Pro to restrict camera access for third party apps: Report"
+			Para="Tech giant Apple recently unveiled its first augmented reality headset, Apple Vision Pro, at its 2023 Worldwide Developers Conference. (WWC) according to the website Mashable. An Apple engineer, cited by the US website stated that the Apple Vision Pro's camera feeds will not be made available to third-party developers. Because of privacy concerns, Apple is blocking access to the camera. During developer talks at WWDC 2023, an Apple engineer revealed that third-party developers will not have access to Apple Vision Pro camera feeds (via UploadVR). Due to privacy concerns, Apple will block unauthorised access to the mixed reality headset's camera. When making a FaceTime call using Apple Vision Pro."
+			Link="https://www.business-standard.com/technology/tech-news/apple-vision-pro-to-restrict-camera-access-for-third-party-apps-report-123061700495_1.html"
+			count="12"
+			time="3"/>
+	
+			<Card
+			Image="https://www.financialexpress.com/wp-content/uploads/2023/06/Breaking-News-pic-4.jpg"
+			Heading="Breaking News LIVE: Adani Enterprise to sell rail tickets online? Gautam Adani challenges IRCTC  monopoly with this deal"
+			Para="In a major development that would virtually end the monopoly of IRCTC is selling Indian Railway tickets online, Adani Enterprise has signed a deal to buy 100 per cent stakes in Stark Enterprises Private Limited. This is an online ticket booking site. Adani Enterprise confirmed this news via a regulatory filing with the stock market. With reference to the captioned subject, we would like to inform you that Adani Digital Labs Private Limited , a wholly owned subsidiary of the Company has signed a Share Purchase Agreement in relation to its proposed acquisition of 100% stake in Stark Enterprises Private Limited, also known as Trainman."
+			Link="https://www.financialexpress.com/india-news/breaking-news-on-june-17-latest-india-news-world-updates-business-news-sports-latest-news-top-trending-news/3129790/"
+			count="43"
+			time="4"/>
+		</div>
 	</main>
 	<Footer />
 </body>
