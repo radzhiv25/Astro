@@ -2,9 +2,9 @@
 const {Image, Head, Place, Category, Price, Link} = Astro.props
 ---
 
-<div class="eve-card bg-[#181818] rounded-md hover:shadow-slate-800 hover:shadow-lg hover:scale-105 transition-transform">
+<div class="eve-card bg-[#181818] rounded-md hover:shadow-slate-800 hover:shadow-lg hover:scale-105 transition-transform lg:mx-auto mx-32">
     <div class="">
-        <img src={Image} alt="" class="rounded-t-md" >
+        <img src={Image} alt="" class="rounded-t-md w-screen" >
     </div>
     <div class="desc p-2 space-y-1">
         <h1 class="text-xl font-semibold">{Head}</h1>
